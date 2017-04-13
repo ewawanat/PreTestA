@@ -1,0 +1,29 @@
+# It takes all the files in an input folder, and adjusts its amplitude to the specified dB value.
+# It creates an output folder for you (called "output").
+
+
+form Files
+	sentence InputDir  /Users/ewawanat/Desktop/exp2recordings/80/
+	positive dB 65
+endform
+
+createDirectory ("output")
+Create Strings as file list... list 'inputDir$'*.wav
+numberOfFiles = Get number of strings
+
+for ifile to numberOfFiles
+
+	select Strings list
+	fileName$ = Get string... ifile
+	Read from file... 'inputDir$''fileName$'
+
+	Scale intensity... 'dB'
+	Write to WAV file... ./output/'fileName$'
+	select all
+	minus Strings list
+	Remove
+
+endfor
+
+select all
+Remove

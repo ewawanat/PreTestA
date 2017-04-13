@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Language Study</title>
+<script src="script.js"></script>
+<script src="script.js"></script>
+<script type="text/javascript">
+var numberOfPlays = 0;
+</script>
+<script type="text/javascript">
+function playAudio() {
+	if (numberOfPlays >= 1)
+		return;
+	var audioPath = 'A1.mp3';
+	var audio = new Audio(audioPath);
+	audio.play();
+	numberOfPlays++;
+}
+</script>
+</head>
+
+<body><input type="hidden"  id="page" value="page1" />
+<h1>1.</h1>
+
+
+<p><a href="exp2/A1.mp3"> 
+</a></p>
+
+<h1><a href="#" onclick="playAudio()"><img src="play.png" alt="" width="58" height="58" /></a></h1>
+
+<p>Type in the missing words:</p>
+<p>But it sat on the path
+<input name="AQ1" type="text" id="AQ1" size="10" />
+duck.</p>
+
+<p><a href="PreApage02.html">next &gt;</a></p>
+</body>
+</html>
