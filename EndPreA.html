@@ -18,6 +18,33 @@ window.onload = function(e) {};
 <p>You have now reached the end of the experiment. </p>
 <p>Please click 'Submit' &gt; now. Please click it only one time!</p>
 
+<!-- <script language="JavaScript">
+
+cookie_name = "partName";
+var YouWrote;
+
+function getName() {
+if(document.cookie)
+{
+index = document.cookie.indexOf(cookie_name);
+if (index != -1)
+{
+namestart = (document.cookie.indexOf("=", index) + 1);
+nameend = document.cookie.indexOf(";", index);
+if (nameend == -1) {nameend = document.cookie.length;}
+YouWrote = document.cookie.substring(namestart, nameend);
+return YouWrote;
+}
+}
+}
+
+YouWrote=getName();
+if (YouWrote == "dataCookie")
+{YouWrote = "Nothing_Entered"}
+
+
+</script> -->
+
 <p><a onclick="submit()" href=#>Submit &gt;</a></p>
 <h1>Thank you for participating in the study! </h1>
 
