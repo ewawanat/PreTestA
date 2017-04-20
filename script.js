@@ -17,7 +17,7 @@ function save() {
   }
 }
 
-function getName() {
+/* function getName() {
   cookie_name = "partName";
   var YouWrote;
   if(document.cookie)
@@ -32,18 +32,18 @@ function getName() {
       return YouWrote;
     }
   }
-}
+} */
 
 function read() {
 
   /*   cookie_name = "partName";
   var YouWrote; */
 
-  YouWrote=getName();
+/*   YouWrote=getName();
   if (typeof YouWrote !== 'undefined'){
     if (YouWrote == "partName")
     {YouWrote = "Nothing_Entered"}
-  }
+  } */
 
   csvRows = [];
   myKeys = [];
@@ -66,11 +66,11 @@ function read() {
   a.target   = '_blank';
   a.download = 'results.csv';
   document.body.appendChild(a);
-  if (typeof YouWrote !== 'undefined'){
+/*   if (typeof YouWrote !== 'undefined'){
   var b = document.createElement('a');
   b.innerHTML = YouWrote;
   document.body.appendChild(b);
-  }
+  } */
 }
 
 function submit() {

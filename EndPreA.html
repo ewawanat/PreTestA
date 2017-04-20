@@ -1,24 +1,31 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
-<script src="script.js"></script>
-<script src="script.js"></script>
-<script type="text/javascript">
-function playAudio() {
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Untitled Document</title>
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      function playAudio() {
         var audioPath = '';
         var audio = new Audio(audioPath);
         audio.play();
-}
-window.onload = function(e) {};
-</script>
-</head>
-<body>
-<p>You have now reached the end of the experiment. </p>
-<p>Please click 'Submit' &gt; now. Please click it only one time!</p>
+      }
+      window.onload = function(e) {};
+    </script>
+  </head>
+  <body>
+    <p>You have now reached the end of the experiment. </p>
+    <p>Please click 'Save' now. Please click it only one time!</p>
 
-<!-- <script language="JavaScript">
+    <script src="drive.js" async defer></script>
+    <div class="g-savetodrive"
+         data-src="//example.com/path/to/myfile.pdf"
+         data-filename="My Statement.pdf"
+         data-sitename="My Company Name">
+    </div>
+
+    <!-- <script language="JavaScript">
 
 cookie_name = "partName";
 var YouWrote;
@@ -45,24 +52,24 @@ if (YouWrote == "dataCookie")
 
 </script> -->
 
-<p><a onclick="submit()" href=#>Submit &gt;</a></p>
-<h1>Thank you for participating in the study! </h1>
+    <!-- <p><a onclick="submit()" href=#>Submit &gt;</a></p> -->
+    <h1>Thank you for participating in the study! </h1>
 
-<!-- This form allows you to upload a file to the server.<br>
+    <!-- This form allows you to upload a file to the server.<br>
 
 <form action="getfile.php" method="post"><br>
 Type (or select) Filename: <input type="file" name="uploadFile">
 <input type="submit" value="Upload File">
 </form> -->
 
-<!-- <script src="drive.js" async defer></script>
-<div class="g-savetodrive"
-   data-src="//example.com/path/to/myfile.pdf"
-   data-filename="My Statement.pdf"
-   data-sitename="My Company Name">
-</div>
- -->
-</body>
+<!--     <script src="drive.js" async defer></script>
+    <div class="g-savetodrive"
+         data-src="//example.com/path/to/myfile.pdf"
+         data-filename="My Statement.pdf"
+         data-sitename="My Company Name">
+    </div> -->
+
+  </body>
 </html>
 
 
