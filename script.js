@@ -36,12 +36,14 @@ function getName() {
 
 function read() {
 
-/*   cookie_name = "partName";
+  /*   cookie_name = "partName";
   var YouWrote; */
 
   YouWrote=getName();
-  if (YouWrote == "partName")
-  {YouWrote = "Nothing_Entered"}
+  if (typeof YouWrote !== 'undefined'){
+    if (YouWrote == "partName")
+    {YouWrote = "Nothing_Entered"}
+  }
 
   csvRows = [];
   myKeys = [];
@@ -64,9 +66,11 @@ function read() {
   a.target   = '_blank';
   a.download = 'results.csv';
   document.body.appendChild(a);
+  if (typeof YouWrote !== 'undefined'){
   var b = document.createElement('a');
   b.innerHTML = YouWrote;
   document.body.appendChild(b);
+  }
 }
 
 function submit() {
