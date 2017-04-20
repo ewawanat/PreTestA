@@ -34,6 +34,13 @@ function save() {
   }
 } */
 
+function upfile(){
+  var b = document.createElement('a');
+  b.innerHTML = 'Upload';
+  b.href = 'https://www.dropbox.com/request/YyNxs6iBQw4DPWaMKD9O?0ref=e';
+  document.body.appendChild(b);
+}
+
 function read() {
 
   /*   cookie_name = "partName";
@@ -65,6 +72,7 @@ function read() {
   a.href     = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csvString);
   a.target   = '_blank';
   a.download = 'results.csv';
+  a.onclick = function() {upfile()};
   document.body.appendChild(a);
 /*   if (typeof YouWrote !== 'undefined'){
   var b = document.createElement('a');
