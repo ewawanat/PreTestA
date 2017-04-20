@@ -36,17 +36,24 @@ function save() {
 
 function upfile(){
   var b = document.createElement('a');
-  b.innerHTML = 'Upload';
-  b.href = 'https://www.dropbox.com/request/YyNxs6iBQw4DPWaMKD9O?0ref=e';
+  b.innerHTML = 'Now, please click \'Upload\' to save the file to Dropbox. <br> Please enter \'test\' for your first name and \'test@test.com\' as your email  address <br><br>';
   document.body.appendChild(b);
+  var c = document.createElement('a');
+  c.innerHTML = 'Upload';
+  c.href = 'https://www.dropbox.com/request/YyNxs6iBQw4DPWaMKD9O?0ref=e';
+  document.body.appendChild(c);
 }
+
+/* function upnotice() {
+
+} */
 
 function read() {
 
   /*   cookie_name = "partName";
   var YouWrote; */
 
-/*   YouWrote=getName();
+  /*   YouWrote=getName();
   if (typeof YouWrote !== 'undefined'){
     if (YouWrote == "partName")
     {YouWrote = "Nothing_Entered"}
@@ -74,7 +81,7 @@ function read() {
   a.download = 'results.csv';
   a.onclick = function() {upfile()};
   document.body.appendChild(a);
-/*   if (typeof YouWrote !== 'undefined'){
+  /*   if (typeof YouWrote !== 'undefined'){
   var b = document.createElement('a');
   b.innerHTML = YouWrote;
   document.body.appendChild(b);
