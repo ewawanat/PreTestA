@@ -36,11 +36,11 @@ function save() {
 
 function upfile(){
   var b = document.createElement('p');
-  b.innerHTML = 'Now, please click \'Upload\' to save the file to Dropbox. <br> Please enter \'test\' for your first name and \'test@test.com\' as your email  address <br>';
+  b.innerHTML = 'Now, please click \'Upload\' to save the file to Dropbox. <br> Please enter your participant ID which was given to you at the start as your first name, and \'test@test.com\' as your email  address <br>';
   document.body.appendChild(b);
   var c = document.createElement('a');
   c.innerHTML = 'Upload';
-  c.href = 'https://www.dropbox.com/request/YyNxs6iBQw4DPWaMKD9O?0ref=e';
+  c.href = 'https://www.dropbox.com/request/zXo3DIVSOSMCxOKVt1KD?oref=e';
   document.body.appendChild(c);
   var d = document.createElement('h3')
   d.innerHTML = 'Thank you for participating in the study!'
