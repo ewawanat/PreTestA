@@ -18,6 +18,8 @@ function save() {
 }
 
 function getName() {
+  cookie_name = "partName";
+  var YouWrote;
   if(document.cookie)
   {
     index = document.cookie.indexOf(cookie_name);
@@ -34,11 +36,11 @@ function getName() {
 
 function read() {
 
-  cookie_name = "partName";
-  var YouWrote;
+/*   cookie_name = "partName";
+  var YouWrote; */
 
   YouWrote=getName();
-  if (YouWrote == "dataCookie")
+  if (YouWrote == "partName")
   {YouWrote = "Nothing_Entered"}
 
   csvRows = [];
