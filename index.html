@@ -8,13 +8,32 @@
 
 <body><input type="hidden"  id="page" value="page1-1" />
 <h1><strong>Welcome! </strong></h1>
-<h2>Your subject ID (experimenter will type this in):
-  <input name="PartID" type="text" id="PartID" size="10" />
+<h2>
+    <script language = 'JavaScript'>
+      cookie_name = 'partName';
+      var part_name_input;
+      function putCookie(){
+        if(document.cookie != document.cookie)
+        {index = document.cookie.indexOf(cookie_name);}
+        else
+        {index = -1;}
+
+        if(index == -1)
+        {part_name_input=document.cf.cfd.value;
+         document.cookie=cookie_name+'='+part_name_input+'; expires=Monday, 24-Apr-2017 05:00:00 GMT';
+        }
+      }
+  </script>
+  <form>
+    Your subject ID (experimenter will type this in): <input name="PartID" type="text" id="PartID" size="10" />
+<!--     <input type='button' Value='Set to Cookie' onClick='putCookie()'> -->
+  </form>
+
 </h2>
 <h2>This experiment will have three parts.</h2>
 <h2>You will be given instructions for each task separately. </h2>
 <h2>The whole experiment shouldn't take longer than 30 minutes. This time will include your breaks.</h2>
 <h2>Click 'next &gt;' for instructions for Part 1 of the experiment. </h2>
-<p><a onclick="checkHash()"href="welcome2.html">next &gt;</a></p>
+<p><input type='button' onclick="putCookie();checkHash()" href="welcome2.html" value='next &gt;'></p>
 </body>
 </html>

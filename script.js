@@ -16,6 +16,7 @@ function save() {
 		localStorage.setItem(key, tElement.value)
 	}
 }
+
 function read() {
 	csvRows = [];
 	myKeys = [];
@@ -36,7 +37,7 @@ function read() {
 	a.innerHTML = "Download";
 	a.href     = 'data:application/csv;charset=utf-8,' + encodeURIComponent(csvString);
 	a.target   = '_blank';
-	a.download = 'resutls.csv';
+	a.download = 'results.csv';
 	document.body.appendChild(a);
 }
 
